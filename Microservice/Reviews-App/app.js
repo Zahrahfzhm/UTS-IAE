@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const conn = require('./config/database')
+const conn = require('./config/dbreviews')
 
 app.get('/reviews', (req, res) => {
     var sql = "SELECT * FROM reviewproduct";
